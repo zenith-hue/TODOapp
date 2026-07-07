@@ -96,3 +96,22 @@ h1 {
   height: 18px;
   cursor: pointer;
 }
+
+#error-message {
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fdeded;
+  color: #c62828;
+  font-size: 13px;
+}
+
+#todo-list li.sync-failed {
+  border-color: #e5a5a5;
+}
+
+#todo-list li.sync-failed span::after {
+  content: " (동기화 실패)";
+  color: #c62828;
+  font-size: 12px;
+}
