@@ -18,9 +18,10 @@
 6. 배포 후 발급되는 **웹 앱 URL**을 복사합니다.
 
 ## 4. 앱에 연결
-`script.js` 상단의 `SHEET_API_URL` 상수에 3-6에서 복사한 URL을 붙여넣습니다.
+프로젝트 루트의 `config.example.js`를 복사해 `config.js`로 저장하고, 3-6에서 복사한 URL을 넣습니다. `config.js`는 `.gitignore`에 포함되어 있어 git에 커밋되지 않습니다 (이 URL은 인증 없이 시트를 쓸 수 있는 값이므로 비밀로 취급해야 합니다).
 
 ```js
+// config.js
 export const SHEET_API_URL = '여기에_배포된_웹_앱_URL';
 ```
 

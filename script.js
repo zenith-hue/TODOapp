@@ -1,5 +1,4 @@
-// TODO: 배포된 Google Apps Script 웹 앱 URL로 교체하세요.
-export const SHEET_API_URL = '';
+import { SHEET_API_URL } from './config.js';
 
 export function mapRowToTodo(row) {
   const [id, text, completed] = row;
